@@ -17,6 +17,18 @@ html {
 body {
   font-family: "Cairo", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--sec-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color-alt);
+}
 a {
   text-decoration: none;
 }
