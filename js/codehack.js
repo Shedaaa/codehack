@@ -30,3 +30,30 @@ function startCount(el) {
     }
   }, 2000 / goal);
 }
+
+//
+
+let btnUp = document.createElement("button");
+let icon = document.createElement("i");
+
+btnUp.appendChild(icon);
+
+btnUp.className = "btnUp";
+icon.className = "fa-solid fa-angles-up";
+
+document.body.appendChild(btnUp);
+
+window.onscroll = function () {
+  if (window.scrollY >= 800) {
+    btnUp.style.display = "block";
+  } else {
+    btnUp.style.display = "none";
+  }
+};
+
+btnUp.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
