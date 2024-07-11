@@ -33,6 +33,7 @@ function startCount(el) {
 
 //
 
+
 let btnUp = document.createElement("button");
 let icon = document.createElement("i");
 
